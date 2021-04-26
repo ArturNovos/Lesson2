@@ -6,7 +6,11 @@ while i < our_threshhold:
     i += 1
     if i % 7 == 0:
         print('Good reason to stop')
-        continuegu
+        print('Good reason to stop')
+        print('Good reason to stop')
+        print('Good reason to stop')
+        print('Good reason to stop')
+
 
 
 
