@@ -1,0 +1,55 @@
+#Task 1 String manipulation
+
+str = input('Write down your thinking')
+if len(str) <2:
+    print('Expected Result: Empty String')
+else:
+    print(f'Expected Result: {str[:2]}+{str[-2:]}')
+
+#Task 2 The valid phone number program.
+
+while True:
+    phone_number = input('Enter your phone number')
+    if phone_number.isdigit():
+        if len(phone_number) == 10:
+            print('Your phone number was entered correctly')
+            break
+        if len(phone_number) > 10:
+            print('Your phone number is more than 10, try again')
+        if len(phone_number) < 10:
+            print('Your phone number is less than 10, try again')
+else:
+    print('Entered phone number is incorrect.Enter again')
+
+# Task 3
+name = 'artur'
+while True:
+    correct_name = input('Try to guess my name')
+    if name.lower() == correct_name.lower():
+        print(f'You are right,  my name is {name}')
+        break
+    else:
+        print(f'You are wrong, my name is not {input()}, try again')
+
+#Task *
+if __name__ == '__main__':
+
+    if input('Is your name Tania?') in 'YyДд':
+        print('I want to clarify the terms of delivery')
+    if input('Is your name Tania?') in 'NnНт':
+        print('Excuse for troubling')
+while True:
+    delivery = input('Nova poshta = n, Justin = j, pick_up = p')
+    if delivery == 'n':
+        print('Provide your address, please')
+        break
+    elif delivery == 'j':
+        print('To receive the delivery, please point out your mail and phone number')
+        break
+    elif delivery == 'p':
+        print('Provide convenient a date for you')
+        break
+else:
+    print('Your response was entered incorrectly')
+
+#Как сделать так, чтоб после введения ответа юзера, мы ему сказали спасибо за ваш ответ
